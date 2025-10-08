@@ -4,13 +4,13 @@ export default function Header() {
   return (
     <header className="header">
       <div>
-        <h1>Dashboard</h1>
+        <h3>Dashboard</h3>
         <p>Overview of recent activity</p>
       </div>
-      <div className="profile">
+      {/* <div className="profile">
         <input type="text" placeholder="Search..." />
         <div className="avatar">A</div>
-      </div>
+      </div> */}
     </header>
   );
 }

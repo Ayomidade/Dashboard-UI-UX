@@ -1,4 +1,5 @@
 import React from "react";
+import PieChart from "./PieChart";
 
 const TopProducts = () => {
   const products = [
@@ -16,7 +17,7 @@ const TopProducts = () => {
       date: "15 March 2018",
       price: "$55.99",
       quantity: "47",
-      amount: "$$3689.73",
+      amount: "$3689.73",
     },
     {
       id: "3",
@@ -42,42 +43,47 @@ const TopProducts = () => {
       quantity: "12",
       amount: "$2689.58",
     },
+    {
+      id: "2",
+      name: "Marco Lightweight Shirt",
+      date: "15 March 2018",
+      price: "$55.99",
+      quantity: "47",
+      amount: "$3689.73",
+    },
   ];
   return (
     <>
-      <div className="sub-hero" style={{ display: "flex", gap: "20px", border:"1px solid black" }}>
-        <div style={{ width: "60%" }}>
-          <div className="export">
-            <p style={{ color: "GrayText", fontSize: "18px" }}>
-              Top Selling Products
-            </p>
-            <button>Export</button>
-          </div>
-
-          <table>
-            <thead>
-              <tr>
-                <th>PRODUCT NAME</th>
-                <th>DATE/TIME</th>
-                <th>PRICE</th>
-                <th>QUANTITY</th>
-                <th>AMOUNT</th>
-              </tr>
-            </thead>
-            <tbody>
-              {products.map((product) => (
-                <tr key={product.id}>
-                  <td>{product.name}</td>
-                  <td>{product.date}</td>
-                  <td>{product.price}</td>
-                  <td>{product.quantity}</td>
-                  <td>{product.amount}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <div style={{ margin: "0px", width:"70%" }}>
+        <div className="export">
+          <p style={{ color: "GrayText", fontSize: "18px" }}>
+            Top Selling Products
+          </p>
+          <button>Export</button>
         </div>
-        <div className="pie-chart"></div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>PRODUCT NAME</th>
+              <th>DATE/TIME</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th>
+              <th>AMOUNT</th>
+            </tr>
+          </thead>
+          <tbody>
+            {products.map((product) => (
+              <tr key={product.id}>
+                <td>{product.name}</td>
+                <td>{product.date}</td>
+                <td>{product.price}</td>
+                <td>{product.quantity}</td>
+                <td>{product.amount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </>
   );
