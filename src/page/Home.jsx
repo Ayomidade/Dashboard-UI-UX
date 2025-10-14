@@ -12,7 +12,7 @@ import Customers from "../components/Customers";
 import Online from "../components/Online";
 import Marketing from "../components/Marketing";
 import Header from "../components/Header";
-import Marketplace from "../components/Marketplace";
+import Marketplace from "./marketplace";
 
 const Home = () => {
   const [currentScreen, setCurrentScreen] = useState("dashboard");
@@ -25,13 +25,11 @@ const Home = () => {
 
       case "dashboard":
         return <Dashboard />
-      case "home":
-        return <Marketplace/>
       case "orders":
         return <Orders />;
 
-      case "analytics":
-        return <Analytics />;
+      case "marketplace":
+        return <Marketplace />;
 
       case "categories":
         return <Categories />;
