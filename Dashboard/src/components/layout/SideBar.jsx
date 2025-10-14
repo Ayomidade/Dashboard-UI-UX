@@ -1,6 +1,6 @@
 import React from "react";
 
-const SideBar = ({handler}) => {
+const SideBar = ({ handler }) => {
   return (
     <>
       <div className="side-menu">
@@ -10,6 +10,9 @@ const SideBar = ({handler}) => {
         <div className="side-main">
           <p>MAIN</p>
           <ul>
+            <li>
+              <button onClick={() => handler("home")}>Home</button>
+            </li>
             <li>
               <button onClick={() => handler("dashboard")}>Dashboard</button>
             </li>

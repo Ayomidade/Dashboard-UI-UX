@@ -1,16 +1,31 @@
 import React from "react";
+import { FaShoppingCart, FaUser, FaSearch } from "react-icons/fa";
+// import "./Header.css";
 
-export default function Header() {
+const Header = () => {
   return (
     <header className="header">
-      <div>
-        <h3>Dashboard</h3>
-        <p>Overview of recent activity</p>
+      {/* Promo Bar */}
+      <div className="promo-bar">
+        <p>🎉 Big Sale! Get up to 30% off selected items this week only 🎉</p>
       </div>
-      {/* <div className="profile">
-        <input type="text" placeholder="Search..." />
-        <div className="avatar">A</div>
-      </div> */}
+
+      {/* Main Header */}
+      <div className="header-main">
+        <div className="logo">
+          <h2>
+            Power<span>Pixel</span>
+          </h2>
+        </div>
+
+        <div className="header-icons">
+          <FaSearch className="icon" title="Search" />
+          <FaUser className="icon" title="Account" />
+          <FaShoppingCart className="icon" title="Cart" />
+        </div>
+      </div>
     </header>
   );
-}
+};
+
+export default Header;

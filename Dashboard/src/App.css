@@ -5,6 +5,61 @@ body {
   color: #2f3640;
 }
 
+.header {
+  width: 100%;
+  background-color: #fff;
+  color: #2f3640;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Promo Bar */
+.promo-bar {
+  background-color: #1e2a38;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Header Main Section */
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo h2 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #e74c3c;
+}
+
+/* Header Icons */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  color: #e74c3c;
+  transform: scale(1.1);
+}
+
+
 /* SideBar Component */
 .side-menu {
   width: 20%;
@@ -88,12 +143,6 @@ span {
   gap: 20px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
-
 /* StatCard Component */
 .stat-card {
   background: #fff;
@@ -175,4 +224,55 @@ table tr:nth-child(even) {
   padding: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: 0;
+}
+
+/*             */
+/*Default for all page*/
+/*           */
+.home {
+  width: 80%;
+  /* padding: 20px; */
+}
+
+/*             */
+
+.banner {
+  background-image: url(./assets/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg);
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.425);
+  background-blend-mode: color-dodge;
+}
+
+.banner img {
+  width: 300px;
+  height: 300px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-main {
+    padding: 12px 20px;
+  }
+
+  .logo h2 {
+    font-size: 22px;
+  }
+
+  .header-icons {
+    gap: 15px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .side-menu {
+    display: none;
+  }
 }

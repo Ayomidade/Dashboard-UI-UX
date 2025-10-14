@@ -12,15 +12,21 @@ import Customers from "../components/Customers";
 import Online from "../components/Online";
 import Marketing from "../components/Marketing";
 import Header from "../components/Header";
+import Marketplace from "../components/Marketplace";
 
 const Home = () => {
-  const [currentScreen, setCurrentScreen] = useState("");
+  const [currentScreen, setCurrentScreen] = useState("dashboard");
 
   const DynamicDisplay = () => {
     switch (currentScreen) {
-      case "dashboard":
-        return <Dashboard />;
+      // case "dashboard": {
+      //   return !true ? <Dashboard /> : <Marketplace />;
+      // }
 
+      case "dashboard":
+        return <Dashboard />
+      case "home":
+        return <Marketplace/>
       case "orders":
         return <Orders />;
 
@@ -45,7 +51,7 @@ const Home = () => {
         return <Marketing />;
 
       default:
-        return <Dashboard />;
+        return;
     }
   };
 
