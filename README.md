@@ -7,5 +7,5 @@
 * Administration dashboard
 
 
-# Contributors
+## Contributors
  * [Ayomide chris](https://x.com/ayo_cosmos)
