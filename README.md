@@ -9,5 +9,5 @@
 
 ## Contributors
  * [Ayomide chris](https://x.com/ayo_cosmos)
- * [Blaze477] (https://x.com/yeahitsblaze1)
+ * [Blaze477](https://x.com/yeahitsblaze1)
  * [Ayomidade](https://x.com/myk3l)
