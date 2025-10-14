@@ -9,4 +9,6 @@
 
 ## Contributors
  * [Ayomide chris](https://x.com/ayo_cosmos)
- * [Arogundade moses] (https://xcoder.com)
+ * [Blaze477](https://x.com/yeahitsblaze1)
+ * [Ayomidade](https://x.com/myk3l)
+ * [arogundade Moses](https:xcoder.com)
