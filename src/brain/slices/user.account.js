@@ -2,7 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const userSlice = createSlice({
   name: "user",
-  initialState: {},
+  initialState: {
+    metaData: {
+      name: "Ayomide",
+      password: "Ayomide22689$",
+      email: "alfredchrisayo@gmail.com",
+    },
+    settings: {},
+  },
   reducers: {},
 });
 
