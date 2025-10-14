@@ -30,8 +30,8 @@ const Home = () => {
       case "orders":
         return <Orders />;
 
-      case "analytics":
-        return <Analytics />;
+      case "marketplace":
+        return <Marketplace />;
 
       case "categories":
         return <Categories />;
