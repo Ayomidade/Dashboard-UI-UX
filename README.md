@@ -11,4 +11,4 @@
  * [Ayomide chris](https://x.com/ayo_cosmos)
  * [Blaze477](https://x.com/yeahitsblaze1)
  * [Ayomidade](https://x.com/myk3l)
- * [arogundade Moses](https:xcoder.com)
+ * [arogundade Moses](https://xcoder.com)
