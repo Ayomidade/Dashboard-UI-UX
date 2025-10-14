@@ -5,3 +5,7 @@
 * Market place
 * Users Chat 
 * Administration dashboard
+
+
+# Contributors
+ * [Ayomide chris](https://x.com/ayo_cosmos)
