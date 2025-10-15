@@ -20,7 +20,7 @@ const SideBar = ({ handler }) => {
               <button onClick={() => handler("orders")}>Orders</button>
             </li>
             <li>
-              <button onClick={() => handler("analytics")}>Analytics</button>
+              <button onClick={() => handler("marketplace")}>Marketplace</button>
             </li>
             <li>
               <button onClick={() => handler("categories")}>Categories</button>

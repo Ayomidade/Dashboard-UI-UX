@@ -61,7 +61,6 @@ body {
   transform: scale(1.1);
 }
 
-
 /* SideBar Component */
 .side-menu {
   width: 20%;
@@ -184,6 +183,17 @@ span {
   padding: 0px 20px;
 }
 
+.marketplace {
+  width: 80%;
+  padding: 10px;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 .export button {
   color: #e74c3c;
   font-size: 13px;
@@ -255,6 +265,7 @@ table tr:nth-child(even) {
   height: 300px;
 }
 
+<<<<<<< HEAD
 .product-card {
   width: 25%;
   padding: 20px;
@@ -265,6 +276,8 @@ table tr:nth-child(even) {
 }
 
 
+=======
+>>>>>>> a549880a7243b55005b40d67d56503bcaa2325dc
 /* Responsive */
 @media (max-width: 768px) {
   .header-main {
