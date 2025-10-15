@@ -15,9 +15,58 @@
   },
   {
     "id": 3,
-    "name": "3bdrm Apartment in Lekki for rent",
+    "name": "3 bedroom Apartment in Lekki for rent",
     "description": "Newly built 3 bed apartment with elevator LEKKI phase1 LEKKI Rent 30M ( 2 years needed) Agency 10% Legal 10% Caution 10% Service charge TBD ",
     "price": "120M/Yearly",
     "image": "https://pictures-nigeria.jijistatic.net/181244110_MzAwLTQwMC0xMWRmYTI2ZTdi.webp"
+  },
+  {
+    "id": 4,
+    "name": "Modern 4 Bedroom Terrace Duplex",
+    "description": "A tastefully finished 4 bedroom terrace duplex with all rooms ensuite, fitted kitchen, ample parking space, and 24/7 security. Located in a serene estate in Lekki Phase 2.",
+    "price": "80M/Yearly",
+    "image": "https://images.propertypro.ng/medium/modern-4-bedroom-terrace-duplex-lekki.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Luxury 2 Bedroom Apartment in Victoria Island",
+    "description": "Fully serviced luxury 2 bedroom apartment with modern amenities, swimming pool, gym, and 24/7 power supply. Located in the heart of Victoria Island.",
+    "price": "60M/Yearly",
+    "image": "https://images.propertypro.ng/medium/luxury-2-bedroom-apartment-victoria-island.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Spacious 6 Bedroom Mansion in Ikoyi",
+    "description": "Exquisite 6 bedroom mansion with a private pool, cinema, gym, and ample parking. All rooms ensuite. Located in a secure and serene environment in Ikoyi.",
+    "price": "250M/Yearly",
+    "image": "https://images.propertypro.ng/medium/spacious-6-bedroom-mansion-ikoyi.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Affordable 1 Bedroom Mini Flat in Yaba",
+    "description": "Clean and affordable 1 bedroom mini flat, suitable for singles or young couples. Located close to major roads and amenities in Yaba.",
+    "price": "1.2M/Yearly",
+    "image": "https://images.propertypro.ng/medium/affordable-1-bedroom-mini-flat-yaba.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Elegant 3 Bedroom Flat in Ikeja GRA",
+    "description": "Elegant and spacious 3 bedroom flat with modern fittings, ample parking, and 24/7 security. Located in the prestigious Ikeja GRA.",
+    "price": "35M/Yearly",
+    "image": "https://images.propertypro.ng/medium/elegant-3-bedroom-flat-ikeja-gra.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Serviced Studio Apartment in Lekki",
+    "description": "Fully serviced studio apartment with kitchenette, WiFi, and cleaning services. Ideal for professionals. Located in Lekki Phase 1.",
+    "price": "2.5M/Yearly",
+    "image": "https://images.propertypro.ng/medium/serviced-studio-apartment-lekki.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Classic 4 Bedroom Detached Duplex in Ajah",
+    "description": "Classic 4 bedroom detached duplex with BQ, fitted kitchen, and spacious compound. Located in a gated estate in Ajah.",
+    "price": "45M/Yearly",
+    "image": "https://images.propertypro.ng/medium/classic-4-bedroom-detached-duplex-ajah.jpg"
   }
 ]
