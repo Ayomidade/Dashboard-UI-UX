@@ -11,13 +11,10 @@ import Employees from "../components/Employees";
 import Customers from "../components/Customers";
 import Online from "../components/Online";
 import Marketing from "../components/Marketing";
-<<<<<<< HEAD:src/page/Home.jsx
 import Header from "../components/Header";
 import Marketplace from "./marketplace";
-=======
 // import Header from "../components/Header";
 import Marketplace from "../components/Marketplace";
->>>>>>> eb52fcc1bd2bff8743630f8cc4925056309369ef:src/pages/Home.jsx
 
 const Home = () => {
   const [currentScreen, setCurrentScreen] = useState("dashboard");
