@@ -191,6 +191,15 @@ span {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  text-size-adjust: ◼ ◾ ;
+}
+
+input[type="text"] {
+  padding: 10px 2px;
+  width: 500px;
+  border: 3px solid black;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .export button {
