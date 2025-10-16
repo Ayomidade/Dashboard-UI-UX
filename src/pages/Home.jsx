@@ -11,13 +11,8 @@ import Employees from "../components/Employees";
 import Customers from "../components/Customers";
 import Online from "../components/Online";
 import Marketing from "../components/Marketing";
-<<<<<<< HEAD:src/page/Home.jsx
-import Header from "../components/Header";
-import Marketplace from "./marketplace";
-=======
 // import Header from "../components/Header";
-import Marketplace from "../components/Marketplace";
->>>>>>> eb52fcc1bd2bff8743630f8cc4925056309369ef:src/pages/Home.jsx
+import Marketplace from "./Marketplace";
 
 const Home = () => {
   const [currentScreen, setCurrentScreen] = useState("dashboard");
@@ -29,13 +24,9 @@ const Home = () => {
       // }
 
       case "dashboard":
-<<<<<<< HEAD:src/page/Home.jsx
-        return <Dashboard />
-=======
         return <Dashboard />;
       case "home":
         return <Marketplace />;
->>>>>>> eb52fcc1bd2bff8743630f8cc4925056309369ef:src/pages/Home.jsx
       case "orders":
         return <Orders />;
 
