@@ -11,6 +11,7 @@ import Employees from "../components/Employees";
 import Customers from "../components/Customers";
 import Online from "../components/Online";
 import Marketing from "../components/Marketing";
+import Header from "../components/Header";
 // import Header from "../components/Header";
 import Marketplace from "./Marketplace";
 
