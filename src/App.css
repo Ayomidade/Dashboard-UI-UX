@@ -406,6 +406,38 @@ p a {
   cursor: pointer;
 }
 
+.auth {
+  background-image: url("src/assets/—Pngtree—abstract blue background with smooth_15505491.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.247);
+  background-blend-mode: darken;
+  width: 80%;
+  padding: 30px;
+  gap: 30px;
+
+}
+
+.welcome-message {
+  color: #fff;
+  max-width: 400px;
+  text-align: center;
+}
+
+.welcome-message h3 {
+  font-size: 36px;
+}
+
+.welcome-message p {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #e0e0e0;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -423,9 +455,5 @@ p a {
 
   .icon {
     font-size: 18px;
-  }
-
-  .side-menu {
-    display: none;
   }
 }
