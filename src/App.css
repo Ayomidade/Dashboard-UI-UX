@@ -5,6 +5,7 @@ body {
   font-family: "Segoe UI", Tahoma, sans-serif;
   background: #f5f7fa;
   color: #2f3640;
+  scrollbar-width: none;
 }
 
 .header {
