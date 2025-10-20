@@ -1,7 +1,13 @@
 import "./App.css";
+<<<<<<< HEAD
 import React, { useState } from "react";
 import __Route from "./routes/__Route";
 import Formbuilder from "./components/formbuilder/Formbuilder";
+=======
+import Home from "./pages/Home";
+import React from "react";
+
+>>>>>>> dba43792e64f3667e67fe83fb1aff9d2207eb040
 function App() {
   // const forms = [
   //   {
@@ -59,6 +65,7 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
       {/* <div className="relative flex justify-between items-center">
         <div></div>
 
@@ -79,6 +86,10 @@ function App() {
         </div>
       </div> */}
       <__Route />
+=======
+      {/* <SignUp/> */}
+      <Home />
+>>>>>>> dba43792e64f3667e67fe83fb1aff9d2207eb040
     </>
   );
 }

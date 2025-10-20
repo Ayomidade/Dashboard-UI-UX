@@ -44,7 +44,7 @@ const TopProducts = () => {
       amount: "$2689.58",
     },
     {
-      id: "2",
+      id: "6",
       name: "Marco Lightweight Shirt",
       date: "15 March 2018",
       price: "$55.99",
