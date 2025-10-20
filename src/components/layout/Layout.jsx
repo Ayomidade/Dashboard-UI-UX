@@ -14,12 +14,17 @@ const Layout = ({ children, handler }) => {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          maxHeight: "100vh",
+          height: "100vh",
         }}
       >
         <SideBar handler={handler} />
         <div
-          style={{ overflowY: "scroll", width: "80%", scrollbarWidth: "none" }}
+          style={{
+            overflowY: "scroll",
+            width: "80%",
+            scrollbarWidth: "none",
+            height: "100vh",
+          }}
         >
           {children}
         </div>
