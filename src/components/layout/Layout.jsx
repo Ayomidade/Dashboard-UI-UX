@@ -12,7 +12,7 @@ const Layout = ({ children, handler }) => {
     <>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <SideBar handler={handler} />
-        <div style={{ overflowY: "scroll", width: "80%" }}>{children}</div>
+        <div style={{ overflowY: "scroll", width: "80%", scrollbarWidth:"none"}}>{children}</div>
       </div>
     </>
   );
