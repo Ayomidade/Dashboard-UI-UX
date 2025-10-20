@@ -22,8 +22,6 @@ export default function useAuthProviderController() {
 
 
 
-
-  
   async function setUserData(uid) {
     const result = await getUser(uid);
     setISAuthenticated(true);
