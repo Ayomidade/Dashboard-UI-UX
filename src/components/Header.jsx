@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { FaShoppingCart, FaUser, FaSearch } from "react-icons/fa";
+import { FaShoppingCart, FaUser, FaSearch, FaSignOutAlt } from "react-icons/fa";
+import { useAuthProvider } from "../context/AuthProvider";
 
 const Header = () => {
   const [isSearching, setIsSearching] = useState(false);
+  const { user, signOutHandler } = useAuthProvider();
 
   const toggleSearch = () => {
     setIsSearching(!isSearching);
   };
+  // console.log(user);
 
   return (
     <header className="header">
@@ -19,6 +22,7 @@ const Header = () => {
           <h2>
             Shared<span>Homes</span>
           </h2>
+          <p>Welcome back, {user?.firstname}</p>
         </div>
 
         <div className="header-icons">
@@ -30,6 +34,11 @@ const Header = () => {
           )}
           <FaUser className="icon" title="Account" />
           <FaShoppingCart className="icon" title="Cart" />
+          <FaSignOutAlt
+            className="icon"
+            title="Log out"
+            onClick={signOutHandler}
+          />
         </div>
       </div>
     </header>

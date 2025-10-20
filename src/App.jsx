@@ -79,8 +79,8 @@ function App() {
         </div>
       </div> */}
       <__Route />
-      {/* <SignUp/> */}
-      {/* <Home /> */}
+  
+    
     </>
   );
 }

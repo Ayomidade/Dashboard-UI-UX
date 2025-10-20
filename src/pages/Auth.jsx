@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Register from "../components/Register";
-import Login from "../components/Login";
+import Login from "../components/Onbaoarding/Onbaoarding";
 
 const Auth = () => {
   // const [login, setLogin] = useState(true);
