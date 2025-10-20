@@ -10,9 +10,19 @@ const Layout = ({ children, handler }) => {
   // console.log(user);
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          maxHeight: "100vh",
+        }}
+      >
         <SideBar handler={handler} />
-        <div style={{ overflowY: "scroll", width: "80%", scrollbarWidth:"none"}}>{children}</div>
+        <div
+          style={{ overflowY: "scroll", width: "80%", scrollbarWidth: "none" }}
+        >
+          {children}
+        </div>
       </div>
     </>
   );
