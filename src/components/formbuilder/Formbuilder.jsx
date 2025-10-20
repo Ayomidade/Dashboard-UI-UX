@@ -9,7 +9,7 @@ function Formbuilder({ forms, formValues, handleFormChange }) {
     switch (input.type) {
       case "radio":
         return (
-          <div className="h-auto justify-start items-start w-full">
+          <div key={input} className="h-auto justify-start items-start w-full">
             <label className="gap-10 flex justify-start items-center p-1">
               <b className="text-gray-500 font-bold">{input.name}</b>
               <div>
@@ -40,7 +40,10 @@ function Formbuilder({ forms, formValues, handleFormChange }) {
         );
       case "checkbox":
         return (
-          <div className="flex justify-start items-start p-1 h-auto w-full">
+          <div
+            key={input}
+            className="flex justify-start items-start p-1 h-auto w-full"
+          >
             <label className="justify-start items-center flex">
               <b className="text-gray-500 font-bold">{input.name}</b>
               <input
@@ -54,7 +57,7 @@ function Formbuilder({ forms, formValues, handleFormChange }) {
         );
       default:
         return (
-          <label className="p-1 h-auto flex-col flex w-full">
+          <label key={input.name} className="p-1 h-auto flex-col flex w-full">
             {" "}
             <b className="text-gray-500 font-bold text-left">{input.name}</b>
             <input

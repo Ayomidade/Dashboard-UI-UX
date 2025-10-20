@@ -4,7 +4,7 @@ import { useAuthProvider } from "../../context/AuthProvider";
 import Onboarding from "../Onbaoarding/Onbaoarding";
 
 const Layout = ({ children, handler }) => {
-  const { isAuthenticated, user } = useAuthProvider();
+  const { isAuthenticated } = useAuthProvider();
 
   if (!isAuthenticated) return <Onboarding />;
   // console.log(user);

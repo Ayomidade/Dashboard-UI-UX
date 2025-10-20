@@ -6,10 +6,14 @@ import {
   signOut,
   getAuth,
 } from "firebase/auth";
-import { db } from "../firebase/app.config";
+import { app, db } from "../firebase/app.config";
 import { doc, getDoc, setDoc } from "firebase/firestore";
-const auth = getAuth();
+import { useNavigate } from "react-router-dom";
+
+//
+const auth = getAuth(app);
 export default function useAuthProviderController() {
+  const navigate = useNavigate();
   const [isAuthenticated, setISAuthenticated] = useState(false);
   const [user, setUser] = useState({});
 
@@ -84,12 +88,12 @@ export default function useAuthProviderController() {
   };
 
   const signOutHandler = async () => {
-    try {
-      await signOut(auth);
-      //   localStorage.clear();
-    } catch (error) {
-      console.log(error);
-    }
+    signOut(auth)
+      .then(() => {
+        navigate("/");
+        localStorage.removeItem("uid");
+      })
+      .catch((error) => console.log(error));
   };
 
   return { getUser, SignIn, user, SignUp, isAuthenticated, signOutHandler };

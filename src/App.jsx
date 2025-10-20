@@ -59,28 +59,7 @@ function App() {
 
   return (
     <>
-      {/* <div className="relative flex justify-between items-center">
-        <div></div>
-
-        <div className="w-[50%] border grid grid-cols-1 p-10">
-          <Formbuilder
-            forms={forms}
-            handleFormChange={handleFormChange}
-            formValues={formValues}
-            handleSubmit={handleSubmitForm}
-          />
-          <div className="p-3 w-full h-24">
-            <button 
-            onClick={handleSubmitForm}
-            className="p-3 w-[100%] h-12 rounded-10 bg-black transition duration-400 text-white font-500 hover:bg-[rgba(0, 0, 0, 0.58)]">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div> */}
       <__Route />
-  
-    
     </>
   );
 }
