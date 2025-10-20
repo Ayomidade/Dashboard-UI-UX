@@ -4,9 +4,9 @@ import SideBar from "./SideBar";
 const Layout = ({ children, handler }) => {
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "space-between", }}>
+      <div style={{ display: "flex", justifyContent: "space-between", maxHeight:"100vh"}}>
         <SideBar handler={handler} />
-        {children}
+        <div style={{ overflowY: "scroll", width: "80%" }}>{children}</div>
       </div>
     </>
   );
