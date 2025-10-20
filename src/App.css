@@ -111,6 +111,7 @@ body {
   width: 100%;
   background-color: #2f3640;
   letter-spacing: 2px;
+  margin-bottom: 0px;
 }
 
 span {
@@ -319,12 +320,12 @@ table tr:nth-child(even) {
 .register-form,
 .login-form {
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   background-color: #fff;
-  max-width: 400px;
-  margin: 0 auto;
+  width: 500px;
+  /* max-width: 400px; */
 }
 
 .register-form h2,
@@ -335,7 +336,7 @@ table tr:nth-child(even) {
   font-size: 34px;
 }
 
-form span {
+.agreement {
   color: gray;
   font-size: 12px;
 }
@@ -354,7 +355,7 @@ form {
   width: 100%;
 }
 
-form input[type="text"],
+.input-text,
 form input[type="email"],
 form input[type="password"],
 form input[type="tel"] {
@@ -375,7 +376,7 @@ form button {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px;
+  margin: 20px;
   font-weight: 600;
 }
 
@@ -401,12 +402,12 @@ p a {
   background-position: center;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.247);
   background-blend-mode: darken;
-  padding: 30px;
-  gap: 30px;
+  padding: 50px 30px;
+  /* gap: 30px; */
 
 }
 
@@ -424,6 +425,13 @@ p a {
   font-size: 16px;
   line-height: 1.2;
   color: #e0e0e0;
+}
+
+.children {
+  overflow-y: scroll;
+  width: 80%;
+  scrollbar-width: none;
+  height: 100vh;
 }
 
 
@@ -444,4 +452,13 @@ p a {
   .icon {
     font-size: 18px;
   }
+
+  .side-menu {
+    display: none;
+  }
+
+  .children {
+    width: 100%;
+  }
+
 }

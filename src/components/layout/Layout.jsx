@@ -18,13 +18,7 @@ const Layout = ({ children, handler }) => {
         }}
       >
         <SideBar handler={handler} />
-        <div
-          style={{
-            overflowY: "scroll",
-            width: "80%",
-            scrollbarWidth: "none",
-            height: "100vh",
-          }}
+        <div className="children"
         >
           {children}
         </div>

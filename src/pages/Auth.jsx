@@ -24,7 +24,6 @@ const Auth = () => {
             temporibus quis.
           </p>
         </div>
-        <Login />
       </div>
     </>
   );

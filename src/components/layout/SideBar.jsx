@@ -5,7 +5,7 @@ const SideBar = ({ handler }) => {
     <>
       <div className="side-menu">
         <h1>
-          Power<span>Pixel</span>
+          Shared<span>Homes</span>
         </h1>
         <div className="side-main">
           <p>MAIN</p>

@@ -41,14 +41,14 @@ function Formbuilder({ forms, formValues, handleFormChange }) {
       case "checkbox":
         return (
           <div className="flex justify-start items-start p-1 h-auto w-full">
-            <label className="justify-start items-center flex">
-              <b className="text-gray-500 font-bold">{input.name}</b>
+            <label className="terms">
               <input
-                className="ml-3"
+                // className="ml-3"
                 type="checkbox"
                 onChange={(e) => handleFormChange(input.name, e.target.checked)}
                 value={formValues[input.value]}
               />
+              <b className="agreement">{input.name}</b>
             </label>
           </div>
         );
@@ -62,7 +62,7 @@ function Formbuilder({ forms, formValues, handleFormChange }) {
               type="text"
               placeholder={input.placeholder}
               onChange={(e) => handleFormChange(input.name, e.target.value)}
-              className="p-5 bg-gray-200 rounded-md outline outline-greay-500 border-0.5"
+              className="input-text"
             />
           </label>
         );
