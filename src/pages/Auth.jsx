@@ -13,17 +13,9 @@ const Auth = () => {
 
   return (
     <>
-      <div
-        style={{
-          width: "80%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "40px",
-          gap: "30px",
-        }}
+      <div className="auth"
       >
-        <div>
+        <div className="welcome-message">
           <h3>Welcome</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio

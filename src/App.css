@@ -12,6 +12,8 @@ body {
   background-color: #fff;
   color: #2f3640;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.096);
+  display: sticky;
+  top: 0;
 }
 
 /* Promo Bar */
@@ -119,7 +121,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 80%;
   padding: 20px;
   gap: 20px;
 }
@@ -183,10 +184,6 @@ span {
   padding: 0px 20px;
 }
 
-.marketplace {
-  width: 80%;
-  /* padding: 10px; */
-}
 
 .searchbar input[type="text"] {
   padding: 8px;
@@ -243,16 +240,6 @@ table tr:nth-child(even) {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: 0;
 }
-
-/*             */
-/*Default for all page*/
-/*           */
-.home {
-  width: 80%;
-  /* padding: 20px; */
-}
-
-/*             */
 
 .banner {
   background-image: url(./assets/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg);
@@ -324,11 +311,11 @@ table tr:nth-child(even) {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 20px;
   gap: 20px;
+ 
 }
 
 .register-form,
 .login-form {
-  width: 80%;
   text-align: center;
   padding: 20px;
   border-radius: 16px;
@@ -406,6 +393,37 @@ p a {
   cursor: pointer;
 }
 
+.auth {
+  background-image: url("src/assets/—Pngtree—abstract blue background with smooth_15505491.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.247);
+  background-blend-mode: darken;
+  padding: 30px;
+  gap: 30px;
+
+}
+
+.welcome-message {
+  color: #fff;
+  max-width: 400px;
+  text-align: center;
+}
+
+.welcome-message h3 {
+  font-size: 36px;
+}
+
+.welcome-message p {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #e0e0e0;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -423,9 +441,5 @@ p a {
 
   .icon {
     font-size: 18px;
-  }
-
-  .side-menu {
-    display: none;
   }
 }
