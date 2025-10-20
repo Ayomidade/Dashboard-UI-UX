@@ -19,9 +19,6 @@ export default function useAuthProviderController() {
     }
   }, [localStorage.getItem("uid")]);
 
-
-
-
   async function setUserData(uid) {
     const result = await getUser(uid);
     setISAuthenticated(true);

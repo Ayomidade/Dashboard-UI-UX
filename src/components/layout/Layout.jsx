@@ -10,11 +10,7 @@ const Layout = ({ children, handler }) => {
   // console.log(user);
   return (
     <>
-<<<<<<< Updated upstream
-      <div style={{ display: "flex", justifyContent: "space-between", maxHeight:"100vh"}}>
-=======
       <div style={{ display: "flex", justifyContent: "space-between" }}>
->>>>>>> Stashed changes
         <SideBar handler={handler} />
         <div style={{ overflowY: "scroll", width: "80%" }}>{children}</div>
       </div>
