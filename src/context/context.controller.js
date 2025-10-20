@@ -90,7 +90,7 @@ export default function useAuthProviderController() {
   const signOutHandler = async () => {
     signOut(auth)
       .then(() => {
-        navigate("/");
+        location.replace("/");
         localStorage.removeItem("uid");
       })
       .catch((error) => console.log(error));
