@@ -2,7 +2,7 @@ import React from "react";
 import StatCard from "./StatCard";
 import RevenueChart from "./RevenueChart";
 import TopProducts from "./TopProducts";
-import Header from "./Header";
+import Header from "../header/Header";
 import PieChart from "./PieChart";
 import Cards from "./Cards";
 

@@ -11,13 +11,13 @@ const Login = () => {
   // console.log(SignUp);
   const forms = [
     {
-      name: "Firstname",
+      name: "First Name",
       type: "text",
       placeholder: "Enter first name",
       value: "",
     },
     {
-      name: "Lastname",
+      name: "Last Name",
       type: "text",
       placeholder: "Enter last name",
       value: "",
@@ -35,18 +35,16 @@ const Login = () => {
       placeholder: "Enter Password",
       value: "",
     },
+    {
+      name: "Confirm Password",
+      type: "password",
+      placeholder: "Confirm Password",
+      value: "",
+    },
 
     {
-      name: "Gender",
-      type: "radio",
-      placeholder: "Your Gender",
-      value: "",
-      options: ["male", "female"],
-    },
-    {
-      name: "Agreement",
+      name: "I agree to the Terms and Conditions",
       type: "checkbox",
-      placeholder: "Do you agree to the terms and condition ?",
       value: false,
     },
   ];
@@ -68,11 +66,11 @@ const Login = () => {
 
   const handleSubmitForm = async (e) => {
     e.preventDefault();
-    const { Firstname, Lastname, Email, Password, Gender } = formValues;
+    const { Firstname, Lastname, Email, Password } = formValues;
     // console.log(formValues);
     setLoading(true);
     try {
-      await SignUp(Firstname, Lastname, Gender, Email, Password);
+      await SignUp(Firstname, Lastname, Email, Password);
     } catch (error) {
       console.log(error);
     } finally {
@@ -95,6 +93,11 @@ const Login = () => {
       type: "password",
       placeholder: "Enter Password",
       value: "",
+    },
+    {
+      name: "Remember me",
+      type: "checkbox",
+      value: false,
     },
   ];
 
@@ -133,47 +136,72 @@ const Login = () => {
   return (
     <>
       {login && (
-        <div className="login-form">
-          <h2>Sign In</h2>
-          <form action="">
-            <Formbuilder
-              forms={signInForm}
-              formValues={signInFormValue}
-              handleFormChange={handleSignInFormChange}
-            />
+        <div className="auth">
+          <div className="welcome-message">
+            <h3>Welcome Back</h3>
+            <p>
+              Your next home is just a sign-in away. Access your saved listings,
+              explore new properties, and continue your journey toward finding
+              the perfect place to call home.
+            </p>
+          </div>
+          <div className="login-form">
+            <h2>Sign In</h2>
+            <form action="">
+              <Formbuilder
+                forms={signInForm}
+                formValues={signInFormValue}
+                handleFormChange={handleSignInFormChange}
+              />
 
-            <button onClick={handleSignInSubmitForm}>Sign in</button>
-            <br />
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                gap: "50px",
-              }}
-            >
-              <p>
-                Don't have an account? <a onClick={handleAuth}>Sign up</a>
-              </p>
-              <p>Forgotten Password?</p>
-            </div>
-          </form>
+              <button onClick={handleSignInSubmitForm}>
+                {loading ? "Please wait" : "Sign In"}
+              </button>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  gap: "50px",
+                }}
+              >
+                <p>
+                  Don't have an account? <a onClick={handleAuth}>Sign up</a>
+                </p>
+                <p>Forgotten Password?</p>
+              </div>
+            </form>
+          </div>
         </div>
       )}
 
       {register && (
-        <div className="register-form">
-          <h2>Register</h2>
-          <form action="" className="">
-            <Formbuilder
-              forms={forms}
-              formValues={formValues}
-              handleFormChange={handleFormChange}
-            />
-            <button onClick={handleSubmitForm}>
-              {loading ? "Please wait" : "continue"}
-            </button>
-          </form>
+        <div className="auth">
+          <div className="welcome-message">
+            <h3>Welcome</h3>
+            <p>
+              Sign up to explore verified homes and apartments tailored to your
+              lifestyle and budget. Save your favorite listings, schedule
+              viewings, and find the perfect place to call home — all in one
+              place.
+            </p>
+          </div>
+          <div className="register-form">
+            <h2>Register</h2>
+            <form action="" className="">
+              <Formbuilder
+                forms={forms}
+                formValues={formValues}
+                handleFormChange={handleFormChange}
+              />
+              <button onClick={handleSubmitForm}>
+                {loading ? "Please wait" : "Register"}
+              </button>
+              <p>
+                Already have an account? <a onClick={handleAuth}>Sign in</a>
+              </p>
+            </form>
+          </div>
         </div>
       )}
     </>

@@ -111,6 +111,7 @@ body {
   width: 100%;
   background-color: #2f3640;
   letter-spacing: 2px;
+  margin-bottom: 0px;
 }
 
 span {
@@ -319,12 +320,12 @@ table tr:nth-child(even) {
 .register-form,
 .login-form {
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   background-color: #fff;
-  max-width: 400px;
-  margin: 0 auto;
+  width: 500px;
+  /* max-width: 400px; */
 }
 
 .register-form h2,
@@ -335,7 +336,7 @@ table tr:nth-child(even) {
   font-size: 34px;
 }
 
-form span {
+.agreement {
   color: gray;
   font-size: 12px;
 }
@@ -354,7 +355,7 @@ form {
   width: 100%;
 }
 
-form input[type="text"],
+.input-text,
 form input[type="email"],
 form input[type="password"],
 form input[type="tel"] {
@@ -375,7 +376,7 @@ form button {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px;
+  margin: 20px;
   font-weight: 600;
 }
 
@@ -401,18 +402,19 @@ p a {
   background-position: center;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.247);
   background-blend-mode: darken;
-  padding: 30px;
+  padding: 50px 30px;
   gap: 30px;
 
 }
 
 .welcome-message {
   color: #fff;
-  max-width: 400px;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -426,6 +428,38 @@ p a {
   color: #e0e0e0;
 }
 
+.children {
+  overflow-y: scroll;
+  width: 80%;
+  scrollbar-width: none;
+  height: 100vh;
+}
+
+.menu {
+  display: none;
+}
+
+.mini-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.mini-card .like {
+  font-size: 22px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.like:hover {
+  transform: scale(1.1);
+}
+
+.mini-card .liked {
+  font-size: 22px;
+  color: #e74c3c;
+  transition: transform 0.5s ease-in-out;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -439,9 +473,31 @@ p a {
 
   .header-icons {
     gap: 15px;
+    display: none;
   }
 
   .icon {
     font-size: 18px;
   }
+
+  .side-menu {
+    display: none;
+  }
+
+  .children {
+    width: 100%;
+  }
+
+  .mobile-menu .header-icons {
+    display: flex;
+  }
+
+  .welcome-message {
+    display: none;
+  }
+
+  /* 
+  .auth{
+    flex-direction: column;
+  } */
 }
