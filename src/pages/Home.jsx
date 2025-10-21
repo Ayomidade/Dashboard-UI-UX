@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
 import Orders from "../components/Orders";
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../components/dashboard/Dashboard";
 import Analytics from "../components/Analytics";
 import Categories from "../components/Categories";
 import Collections from "../components/Collections";
@@ -19,9 +19,6 @@ const Home = () => {
 
   const DynamicDisplay = () => {
     switch (currentScreen) {
-      // case "dashboard": {
-      //   return !true ? <Dashboard /> : <Marketplace />;
-      // }
 
       case "dashboard":
         return <Dashboard />;

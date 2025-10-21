@@ -1,7 +1,7 @@
 import React from "react";
-import data from "./../components/product.json";
+import data from "../components/marketplace/product.json";
 import ProductCard from "../components/ProductCard";
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 
 const Marketplace = () => {
   return (

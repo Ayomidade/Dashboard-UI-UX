@@ -37,7 +37,7 @@ export default function useAuthProviderController() {
     return () => isSub;
   }, []);
 
-  const SignUp = async (firstname, lastname, gender, email, password) => {
+  const SignUp = async (firstname, lastname, email, password) => {
     try {
       const response = await createUserWithEmailAndPassword(
         auth,
@@ -51,7 +51,6 @@ export default function useAuthProviderController() {
         lastname,
         password,
         email,
-        gender,
       });
 
       // console.log(result);

@@ -45,7 +45,6 @@ const Login = () => {
     {
       name: "I agree to the Terms and Conditions",
       type: "checkbox",
-      // placeholder: "Do you agree to the terms and condition ?",
       value: false,
     },
   ];
