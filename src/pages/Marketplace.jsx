@@ -1,17 +1,20 @@
 import React from "react";
-import data from "../components/marketplace/product.json";
 import ProductCard from "../components/ProductCard";
 import Header from "../components/header/Header";
+import { useSelector } from "react-redux";
 
 const Marketplace = () => {
+  const { products } = useSelector((store) => store.marketPlaceSlice);
+  // console.log(products);
   return (
     <>
       <div className="marketplace">
         <Header />
 
         <div className="property-grid">
-          {data.map(({ id, name, price, description, image }) => (
+          {products.map(({ id, name, price, description, image }) => (
             <ProductCard
+              id={id}
               key={id}
               propertyImage={image}
               propertyName={name}

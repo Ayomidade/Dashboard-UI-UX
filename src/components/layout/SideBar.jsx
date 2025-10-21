@@ -11,13 +11,10 @@ const SideBar = ({ handler }) => {
           <p>MAIN</p>
           <ul>
             <li>
-              <button onClick={() => handler("home")}>Home</button>
-            </li>
-            <li>
               <button onClick={() => handler("dashboard")}>Dashboard</button>
             </li>
             <li>
-              <button onClick={() => handler("orders")}>Orders</button>
+              <button onClick={() => handler("pastRents")}>Past Rents</button>
             </li>
             <li>
               <button onClick={() => handler("marketplace")}>Marketplace</button>

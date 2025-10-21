@@ -12,24 +12,18 @@ import Customers from "../components/Customers";
 import Online from "../components/Online";
 import Marketing from "../components/Marketing";
 import Marketplace from "./Marketplace";
-import Auth from "./Auth";
 
 const Home = () => {
   const [currentScreen, setCurrentScreen] = useState("marketplace");
 
   const DynamicDisplay = () => {
     switch (currentScreen) {
-
       case "dashboard":
         return <Dashboard />;
-      case "home":
-        return <Auth />;
-      case "orders":
+      case "pastRents":
         return <Orders />;
-
       case "marketplace":
         return <Marketplace />;
-
       case "categories":
         return <Categories />;
       case "collections":
@@ -46,7 +40,6 @@ const Home = () => {
         return <Online />;
       case "marketing":
         return <Marketing />;
-
       default:
         return;
     }

@@ -4,11 +4,11 @@ import {
   FaUser,
   FaSearch,
   FaSignOutAlt,
-  FaHamburger,
   FaBars,
 } from "react-icons/fa";
 import { useAuthProvider } from "../../context/AuthProvider";
 import SideBar from "../layout/SideBar";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [isSearching, setIsSearching] = useState(false);
@@ -26,6 +26,8 @@ const Header = () => {
     console.log("Menu toggled:", !isMenuOpen);
   };
 
+  const { watchList } = useSelector((store) => store.watchListSlice);
+  // console.log(watchList);
   return (
     <header className="header">
       <div className="promo-bar">
@@ -80,7 +82,20 @@ const Header = () => {
             </div>
           )}
           <FaUser className="icon" title="Account" />
-          <FaShoppingCart className="icon" title="Cart" />
+          <div style={{ position: "relative" }}>
+            <FaShoppingCart className="icon" title="Cart" />
+            <span style={{ position: "absolute", right: -4, top: -10 }}>
+              <p
+                style={{
+                  color: "#e74c3c",
+                  fontWeight: "bolder",
+                  textShadow: "2px 2px 2px black",
+                }}
+              >
+                {watchList.length}
+              </p>
+            </span>
+          </div>
           <FaSignOutAlt
             className="icon"
             title="Log out"
