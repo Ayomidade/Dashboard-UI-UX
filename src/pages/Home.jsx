@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
 import Orders from "../components/Orders";
 import Dashboard from "../components/dashboard/Dashboard";
-import Analytics from "../components/Analytics";
-import Categories from "../components/Categories";
 import Collections from "../components/Collections";
 import Products from "../components/Products";
 import Discounts from "../components/Discounts";
@@ -11,10 +9,11 @@ import Employees from "../components/Employees";
 import Customers from "../components/Customers";
 import Online from "../components/Online";
 import Marketing from "../components/Marketing";
-import Marketplace from "./Marketplace";
+import Marketplace from "../components/marketplace/Marketplace";
+import Watchlist from "../components/watchlist/Watchlist";
 
 const Home = () => {
-  const [currentScreen, setCurrentScreen] = useState("marketplace");
+  const [currentScreen, setCurrentScreen] = useState("watchlist");
 
   const DynamicDisplay = () => {
     switch (currentScreen) {
@@ -24,8 +23,8 @@ const Home = () => {
         return <Orders />;
       case "marketplace":
         return <Marketplace />;
-      case "categories":
-        return <Categories />;
+      case "watchlist":
+        return <Watchlist />;
       case "collections":
         return <Collections />;
       case "products":

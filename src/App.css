@@ -450,7 +450,7 @@ p a {
   font-size: 22px;
   transition: transform 0.5s ease-in-out;
   color: lightgray;
-  text-shadow: 2px 2px  4px black;
+  text-shadow: 2px 2px 4px black;
 }
 
 .like:hover {
@@ -462,6 +462,28 @@ p a {
   color: #e74c3c;
   transition: transform 0.5s ease-in-out;
 
+}
+
+.watchlist-number {
+  color: #e74c3c;
+  font-weight: bolder;
+  /* text-shadow: 2px 2px 2px black; */
+}
+
+.grid {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  padding: 20px;
+  gap: 20px;
+}
+
+.cart{
+  position: relative;
+}
+.cart span{
+  position: absolute;
+  right: -4px;
+  top: -10px;
 }
 
 /* Responsive */

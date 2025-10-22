@@ -82,18 +82,10 @@ const Header = () => {
             </div>
           )}
           <FaUser className="icon" title="Account" />
-          <div style={{ position: "relative" }}>
+          <div className="cart">
             <FaShoppingCart className="icon" title="Cart" />
-            <span style={{ position: "absolute", right: -4, top: -10 }}>
-              <p
-                style={{
-                  color: "#e74c3c",
-                  fontWeight: "bolder",
-                  textShadow: "2px 2px 2px black",
-                }}
-              >
-                {watchList.length}
-              </p>
+            <span className="cart-number">
+              <p className="watchlist-number">{watchList.length}</p>
             </span>
           </div>
           <FaSignOutAlt

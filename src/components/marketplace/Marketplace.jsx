@@ -1,6 +1,6 @@
 import React from "react";
-import ProductCard from "../components/ProductCard";
-import Header from "../components/header/Header";
+import ProductCard from "./ProductCard";
+import Header from "../header/Header";
 import { useSelector } from "react-redux";
 
 const Marketplace = () => {

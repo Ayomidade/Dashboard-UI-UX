@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { addProduct } from "../brain/slices/watchlist.slice";
-import { removeProperty } from "../brain/slices/marketplace.slice";
+import { addProduct } from "../../brain/slices/watchlist.slice";
+import { removeProperty } from "../../brain/slices/marketplace.slice";
 
 function PropertyCard({
   id,
