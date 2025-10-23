@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAuthProvider } from "../../context/AuthProvider";
-import Formbuilder from "./../formbuilder/Formbuilder";
+import Formbuilder from "../formbuilder/Formbuilder";
 const Login = () => {
   const value = useAuthProvider();
 

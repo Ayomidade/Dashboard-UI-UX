@@ -80,7 +80,7 @@ const Marketplace = () => {
         >
           <div className="h-full w-[50%] max-sm:hidden"></div>
 
-          <div className="h-full w-[50%] px-16 py-10 bg-[#e74c3c] max-sm:w-full max-sm:px-4 relative">
+          <div className="h-full w-[50%] px-16 py-10 bg-[#e74c3c] max-sm:w-full max-sm:px-4 relative shadow-md">
             <div className="absolute top-0 right-0 p-2">
               <MdRemoveCircle
                 className="text-4xl text-black transition duration-400 hover:text-black"

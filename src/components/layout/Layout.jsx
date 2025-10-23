@@ -1,7 +1,7 @@
 import React from "react";
 import SideBar from "./SideBar";
 import { useAuthProvider } from "../../context/AuthProvider";
-import Onboarding from "../Onbaoarding/Onbaoarding";
+import Onboarding from "../Onbaoarding/Onboarding";
 import Header from "../header/Header";
 
 const Layout = ({ children, handler }) => {
