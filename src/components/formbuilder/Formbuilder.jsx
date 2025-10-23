@@ -52,6 +52,22 @@ function Formbuilder({ forms, formValues, handleFormChange }) {
             </label>
           </div>
         );
+      case "select":
+        return (
+          <div className="flex justify-start items-start p-1 h-auto w-full">
+            <label className="terms">
+              <b className="agreement">{input.name}</b>
+              <select
+                className="p-2 outline-none border-0.5 border-gray-500 text-gray-500"
+                onClick={(e) => handleFormChange(input.name, e.target.value)}
+              >
+                {["-- select role --", ...input?.options].map((option) => (
+                  <option value={option}>{option}</option>
+                ))}
+              </select>
+            </label>
+          </div>
+        );
       default:
         return (
           <label key={input.name} className="p-1 h-auto flex-col flex w-full">

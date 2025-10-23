@@ -2,6 +2,7 @@ import React from "react";
 import SideBar from "./SideBar";
 import { useAuthProvider } from "../../context/AuthProvider";
 import Onboarding from "../Onbaoarding/Onbaoarding";
+import Header from "../header/Header";
 
 const Layout = ({ children, handler }) => {
   const { isAuthenticated } = useAuthProvider();
@@ -18,8 +19,8 @@ const Layout = ({ children, handler }) => {
         }}
       >
         <SideBar handler={handler} />
-        <div className="children"
-        >
+        <div className="children">
+          <Header />
           {children}
         </div>
       </div>

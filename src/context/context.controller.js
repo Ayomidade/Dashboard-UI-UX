@@ -8,12 +8,15 @@ import {
 } from "firebase/auth";
 import { app, db } from "../firebase/app.config";
 import { doc, getDoc, setDoc } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setUserProfile } from "../brain/slices/user.account";
+// import { useNavigate } from "react-router-dom";
 
 //
 const auth = getAuth(app);
 export default function useAuthProviderController() {
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  // const navigate = useNavigate();
   const [isAuthenticated, setISAuthenticated] = useState(false);
   const [user, setUser] = useState({});
 
@@ -27,6 +30,7 @@ export default function useAuthProviderController() {
     const result = await getUser(uid);
     setISAuthenticated(true);
     setUser(result);
+    dispatch(setUserProfile({ user: result }));
   }
 
   useEffect(() => {
@@ -41,7 +45,7 @@ export default function useAuthProviderController() {
     return () => isSub;
   }, []);
 
-  const SignUp = async (firstname, lastname, email, password) => {
+  const SignUp = async (firstname, lastname, email, password, role) => {
     try {
       const response = await createUserWithEmailAndPassword(
         auth,
@@ -49,17 +53,30 @@ export default function useAuthProviderController() {
         password
       );
 
-      await setDoc(doc(db, "users", response.user.uid), {
+      // console.log(firstname, lastname, email, password, role);
+      const result = await setDoc(doc(db, "users", response.user.uid), {
         id: response.user.uid,
         firstname,
         lastname,
         password,
         email,
+        role,
       });
-
       // console.log(result);
+      console.log(result);
     } catch (error) {
-      console.log(error.message);
+      if (error.message.includes("(auth/invalid-email)")) {
+        error.message = "Invalid email";
+      } else if (
+        error.message.includes(
+          "Password should be at least 6 characters (auth/weak-password)"
+        )
+      ) {
+        error.message = "weak password , chnage your password";
+      } else {
+        error.message = "Email already in use";
+      }
+      alert(error.message);
     }
   };
 
@@ -71,7 +88,13 @@ export default function useAuthProviderController() {
         localStorage.setItem("uid", response.user.uid);
       }
     } catch (error) {
-      console.log(error.message);
+      if (error.message.includes("(auth/invalid-email)")) {
+        error.message = "Invalid email";
+      } else if (error.message.includes("(auth/invalid-credential)")) {
+        error.message = "Incorrect password | no user record";
+      }
+      alert(error.message);
+      // console.log(error.message);
     }
   };
 

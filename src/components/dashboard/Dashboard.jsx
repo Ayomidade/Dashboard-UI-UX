@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <>
       <div className="main">
-        <Header />
+  
         <div className="hero">
           <Cards />
           <RevenueChart />

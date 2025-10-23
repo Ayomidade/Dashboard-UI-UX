@@ -13,7 +13,7 @@ import Marketplace from "../components/marketplace/Marketplace";
 import Watchlist from "../components/watchlist/Watchlist";
 
 const Home = () => {
-  const [currentScreen, setCurrentScreen] = useState("watchlist");
+  const [currentScreen, setCurrentScreen] = useState("marketplace");
 
   const DynamicDisplay = () => {
     switch (currentScreen) {

@@ -1,8 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import ProductCard from "../marketplace/ProductCard";
-import Header from "../header/Header";
-
 
 const Watchlist = () => {
   const { watchList } = useSelector((store) => store.watchListSlice);
@@ -12,7 +10,6 @@ const Watchlist = () => {
 
   return (
     <>
-      <Header />
       <div className="grid">
         {watchList.map(({ id, name, price, description, image }) => (
           <ProductCard

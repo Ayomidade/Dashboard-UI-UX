@@ -14,10 +14,12 @@ const SideBar = ({ handler }) => {
               <button onClick={() => handler("dashboard")}>Dashboard</button>
             </li>
             <li>
-              <button onClick={() => handler("pastRents")}>Past Rents</button>
-            </li>
-            <li>
-              <button onClick={() => handler("marketplace")}>Marketplace</button>
+              <button onClick={() => handler("marketplace")}>
+                Marketplace
+              </button>
+              <li>
+                <button onClick={() => handler("pastRents")}>My Rents</button>
+              </li>
             </li>
             <li>
               <button onClick={() => handler("watchlist")}>Watchlist</button>

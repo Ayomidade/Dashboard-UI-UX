@@ -11,13 +11,13 @@ const Login = () => {
   // console.log(SignUp);
   const forms = [
     {
-      name: "First Name",
+      name: "Firstname",
       type: "text",
       placeholder: "Enter first name",
       value: "",
     },
     {
-      name: "Last Name",
+      name: "Lastname",
       type: "text",
       placeholder: "Enter last name",
       value: "",
@@ -40,6 +40,14 @@ const Login = () => {
       type: "password",
       placeholder: "Confirm Password",
       value: "",
+    },
+
+    {
+      name: "Role",
+      type: "select",
+      placeholder: "Select your role",
+      value: "",
+      options: ["Property owner", "Renter"],
     },
 
     {
@@ -66,11 +74,11 @@ const Login = () => {
 
   const handleSubmitForm = async (e) => {
     e.preventDefault();
-    const { Firstname, Lastname, Email, Password } = formValues;
+    const { Firstname, Lastname, Email, Password, Role } = formValues;
     // console.log(formValues);
     setLoading(true);
     try {
-      await SignUp(Firstname, Lastname, Email, Password);
+      await SignUp(Firstname, Lastname, Email, Password, Role);
     } catch (error) {
       console.log(error);
     } finally {

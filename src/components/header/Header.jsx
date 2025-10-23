@@ -7,7 +7,7 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { useAuthProvider } from "../../context/AuthProvider";
-import SideBar from "../layout/SideBar";
+// import SideBar from "../layout/SideBar";
 import { useSelector } from "react-redux";
 
 const Header = () => {
